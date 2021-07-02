@@ -12,12 +12,13 @@
             }
             .nav_bar{
                 display:block;
-                padding:30px 30px;
+                padding:10px 0px 0px 10px;
             }
             ul{
                 list-style-type: none;
                 margin:0;
                 padding:0;
+                overflow:hidden;
             }
             .nav_bar li{
                 float:right;
@@ -26,8 +27,17 @@
                 display:block;
                 color:black;
                 text-align: center;
-                padding:14px 16px;
+                padding:0px 5px 0px 0px;
                 text-decoration:none;
+            }
+            #app_img{
+                padding: 0px 0px 0px 0px;
+            }
+            #profile_img{
+                height:auto;
+                max-width:50%;
+                padding: 0px 0px 0px;
+                border-radius:50%
             }
             .logo{
                 height:275px;
@@ -50,23 +60,17 @@
             }
 
             .footer{
-                display:flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
                 background: #f2f2f2;
+                padding:0px 20px;
+                bottom:0;
+                width:100%;
+                position:absolute;
             }
-            .footer_left li{
-                
-            }
-            .footer_right li{
-                
-            }            
-
             
             .country_bar{
                 color: rgba(0,0,0,.54);
                 background: #f2f2f2;
-                padding: 15px 30px;
+                padding: 0px 30px;
                 border-bottom: 1px solid #dadce0;
                 display:block;
                 font-size: 15px;
@@ -75,7 +79,7 @@
                 color:#70757a;
                 width:100%;
                 justify-content:center;
-                padding:15px;
+                padding: 15px 15px 15px 0px;
                 text-align:center;
             }
             .carbon_neut img{
@@ -85,10 +89,27 @@
                 display:block;
                 color:#70757a;
                 text-decoration: none;
+                padding:0px 25px 0px 0px;
             }
             .carbon_neut a:hover{
                 text-decoration: underline;
             }
+            .footer_list{
+                padding:0px 30px;
+
+            }
+            .footer_list li{
+                padding:10px;
+                float:right;
+            }
+            .footer_list li a{
+                text-decoration: none;
+                color: #70757a;
+            }
+            .footer_list li a:hover{
+                text-decoration: underline;
+            }
+
         </style>
     </head>
     <body>
@@ -96,10 +117,11 @@
             <ul>
                 <li style="float:left"><a href="">About</a></li>
                 <li style="float:left"><a href="">Store</a></li>
-                <li><a href="">Gmail</a></li>
+                <div>
+                <li><a href="" ><img id=profile_img src=images/google_acc.jpeg alt="profile pic"></a></li>
+                <li><a href="" ><img id=app_img src=images/outline_apps_black_24dp.png alt="apps"></a></li>
                 <li><a href="">Images</a></li>
-                <li><a href="">More Options</a></li>
-                <li><a href="">Profile</a></li>
+                <li><a href="">Gmail</a></li>
             </ul>
         </div>
         <div class="logo">
@@ -114,26 +136,26 @@
                 <button>I'm Feeling Lucky</button>
             </div>
         </div>
-        <div class ="country_bar">
-            <p>United Kingdom</p>
-        </div>
+
         <div class="footer">
+            <div class ="country_bar">
+                <p>United Kingdom</p>
+            </div>
             <div class="carbon_neut">
                 <a href="https://sustainability.google/commitments-europe/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
                     <img src=images/carbon_neutral.png alt="leaf"> Carbon neutral since 2007</a>
             </div>
-            <ul>
-                <div class="footer_left">
-                    <li><a href="">Advertising</a></li>
-                    <li><a href="">Business</a></li>
-                    <li><a href="">How Search Works</a></li>
-                </div>
-                <div class="footer_right">
+            <div class="footer_list">
+                <ul>
+                    <li style="float:left"><a href="">Advertising</a></li>
+                    <li style="float:left"><a href="">Business</a></li>
+                    <li style="float:left"><a href="">How Search Works</a></li>
                     <li><a href="">Privacy</a></li>
                     <li><a href="">Terms</a></li>
                     <li><a href="">Settings</a></li>
-                </div>
-            </ul>
+                </ul>
+            
+            </div>
         </div>
     </body>
 </html>
