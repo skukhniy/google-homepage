@@ -7,6 +7,8 @@
                 height:100%;
                 margin:0;
                 padding:0;
+                font-size: 14px;
+                font-family: arial,sans-serif;
             }
             .nav_bar{
                 display:block;
@@ -20,12 +22,21 @@
             .nav_bar li{
                 float:right;
             }
-            li a{
+            .nav_bar li a{
                 display:block;
                 color:black;
                 text-align: center;
                 padding:14px 16px;
                 text-decoration:none;
+            }
+            .logo{
+                height:275px;
+                display:flex;
+                justify-content:center;
+                width:100%;
+            }
+            .logo img{
+                align-self: flex-end;
             }
             .search_bar{
                 text-align:center;
@@ -39,23 +50,44 @@
             }
 
             .footer{
-                display:block;
-                padding:14px 16px;
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                background: #f2f2f2;
             }
             .footer_left li{
-                float:left;
+                
             }
             .footer_right li{
-                float:right;
+                
+            }            
+
+            
+            .country_bar{
+                color: rgba(0,0,0,.54);
+                background: #f2f2f2;
+                padding: 15px 30px;
+                border-bottom: 1px solid #dadce0;
+                display:block;
+                font-size: 15px;
             }
-            .logo{
-                height:275px;
-                display:flex;
-                justify-content:center;
+            .carbon_neut{
+                color:#70757a;
                 width:100%;
+                justify-content:center;
+                padding:15px;
+                text-align:center;
             }
-            .logo img{
-                align-self: flex-end;
+            .carbon_neut img{
+                height:15px;
+            }
+            .carbon_neut a{
+                display:block;
+                color:#70757a;
+                text-decoration: none;
+            }
+            .carbon_neut a:hover{
+                text-decoration: underline;
             }
         </style>
     </head>
@@ -82,9 +114,14 @@
                 <button>I'm Feeling Lucky</button>
             </div>
         </div>
-        <div class="footer">
+        <div class ="country_bar">
             <p>United Kingdom</p>
-            <a href="">Carbon neutral since 2007</a>
+        </div>
+        <div class="footer">
+            <div class="carbon_neut">
+                <a href="https://sustainability.google/commitments-europe/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+                    <img src=images/carbon_neutral.png alt="leaf"> Carbon neutral since 2007</a>
+            </div>
             <ul>
                 <div class="footer_left">
                     <li><a href="">Advertising</a></li>
