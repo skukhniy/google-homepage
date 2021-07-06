@@ -46,7 +46,7 @@
                 border-radius:50%
             }
             .logo{
-                height:275px;
+                height:225px;
                 display:flex;
                 justify-content:center;
                 width:100%;
@@ -54,34 +54,48 @@
             .logo img{
                 align-self: flex-end;
             }
-            .search_bar{
+            .search{
                 padding: 20px;
                 text-align:center;
             }
-            .search_bar form{
+            .search_bar {
                 margin:0 auto;
                 height: 44px;
                 border: 1px solid #dfe1e5;
                 border-radius: 24px;
                 width:auto;
+                min-width:500px;
                 max-width:584px;
+                display:flex;
+                justify-content: center;
                 
             }
             .search_bar input{
                 height: 38px;
                 margin-top:3px;
-                width:85%;
-                border:none;
+                width:500px;
+                max-width:584px;
                 background-color: transparent;
                 outline: none;
+                overflow:hidden;
+                flex-grow:1;
 
             }
-            .search_bar button{
+            #voice_img{
+                height:25px;
+                width:auto;
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+            #search_img{
+                height:20px;
+                width:auto;
+                margin-top:12px;
+                margin-right: 5px;
+            }
+            .search_buttons{
                 margin:10px;
-                margin-top: 20px;
-                
-                
-
+                margin-top: 30px;
             }
 
             .footer{
@@ -155,11 +169,15 @@
         <div class="logo">
             <img id="logo_img" src="images/googlelogo_color_272x92dp.png" alt="Google Logo">  
         </div>
-        <div class="search_bar">
+        <div class="search">
+            <div class="search_bar">
+            <img id="search_img"src=images/outline_search_black_24dp.png>
             <form id=query>
                 <input type="search" id="query" name="q">
             </form>
-            <div>
+            <img id="voice_img"src=images/voice.png>
+            </div>
+            <div class="search_buttons">
                 <button>Google Search</button>
                 <button>I'm Feeling Lucky</button>
             </div>
