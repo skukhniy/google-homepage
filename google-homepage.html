@@ -38,6 +38,7 @@
             }
             #app_img{
                 padding: 3px 0px 0px 15px;
+                opacity:0.5;
             }
             #profile_img{
                 height:auto;
@@ -93,10 +94,11 @@
                 width:auto;
                 margin-top:12px;
                 margin-right: 5px;
+                opacity:0.5;
             }
             .search_buttons{
                 margin:10px;
-                margin-top: 30px;
+                margin-top: 20px;
             }
             .search_buttons button{
                 background-color: #f8f9fa;
@@ -117,7 +119,6 @@
                 width:100%;
                 position:absolute;
             }
-            
             .country_bar{
                 color: rgba(0,0,0,.54);
                 background: #f2f2f2;
@@ -126,39 +127,48 @@
                 display:block;
                 font-size: 15px;
             }
+            .footer-2{
+                display:flex;
+                align-items:center;
+                justify-content: space-evenly;
+                width:100%;
+                flex-wrap:wrap;
+                padding: 0px 20px 10px;
+            }
+            .footer-2 a{
+                text-decoration: none;
+                color: #70757a;
+                text-align: center;
+                padding:0px 5px 0px 0px;
+            }
+            .footer-2 a:hover{
+                text-decoration: underline;
+            }
+            .footer_left{
+                justify-content: flex-start;
+                order:1;
+                min-width: 30%;
+            }
             .carbon_neut{
                 color:#70757a;
-                width:100%;
                 justify-content:center;
                 padding: 15px 15px 15px 0px;
                 text-align:center;
+                order:0;
+                width:100%;
             }
             .carbon_neut img{
                 height:15px;
             }
             .carbon_neut a{
-                display:block;
                 color:#70757a;
                 text-decoration: none;
                 padding:0px 25px 0px 0px;
             }
-            .carbon_neut a:hover{
-                text-decoration: underline;
-            }
-            .footer_list{
-                padding:0px 30px;
-
-            }
-            .footer_list li{
-                padding:10px;
-                float:right;
-            }
-            .footer_list li a{
-                text-decoration: none;
-                color: #70757a;
-            }
-            .footer_list li a:hover{
-                text-decoration: underline;
+            .footer_right{
+                justify-content: flex-end;
+                order:2;
+                min-width:30%;
             }
 
         </style>
@@ -199,19 +209,24 @@
             <div class ="country_bar">
                 <p>United Kingdom</p>
             </div>
-            <div class="carbon_neut">
-                <a href="https://sustainability.google/commitments-europe/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
-                    <img src=images/carbon_neutral.png alt="leaf"> Carbon neutral since 2007</a>
+            <div class="footer-2">
+                <div class="footer_left">
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search Works</a>
+                </div>
+                <div class="carbon_neut">
+                    <div class="carbon_neut_block">
+                        <a href="https://sustainability.google/commitments-europe/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+                        <img src=images/carbon_neutral.png alt="leaf"> Carbon neutral since 2007</a>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <a href="">Terms</a>
+                    <a href="">Settings</a>
+                    <a href="">Privacy</a>
+                </div>
             </div>
-            <div class="footer_list">
-                <ul>
-                    <li style="float:left"><a href="">Advertising</a></li>
-                    <li style="float:left"><a href="">Business</a></li>
-                    <li style="float:left"><a href="">How Search Works</a></li>
-                    <li><a href="">Privacy</a></li>
-                    <li><a href="">Terms</a></li>
-                    <li><a href="">Settings</a></li>
-                </ul>
             
             </div>
         </div>
